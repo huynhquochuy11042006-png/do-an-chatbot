@@ -1,5 +1,5 @@
 import google.generativeai as genai
-genai.configure(api_key="AIzaSyA_mBVCQGp5BTn-2mIOPpfuQ-xqW63GPYI")
+genai.configure(api_key=".......")
 
 import streamlit as st
 import json
@@ -10,7 +10,7 @@ from sentence_transformers import SentenceTransformer
 import google.generativeai as genai
 
 # Configure Gemini API key (thay bằng key thật của bạn từ Google AI Studio)
-genai.configure(api_key="AIzaSyA_mBVCQGp5BTn-2mIOPpfuQ-xqW63GPYI")
+genai.configure(api_key=".....")
 
 # ================= CẤU HÌNH =================
 JSON_FILE = "/content/drive/MyDrive/RAG/all_procedures_normalized.json"  # Đường dẫn file JSON (sau chunk rule-based)
