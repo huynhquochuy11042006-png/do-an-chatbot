@@ -98,7 +98,7 @@ for message in st.session_state.messages:
         st.markdown(message["content"])
 
 # Input từ user
-if prompt := st.chat_input("Hỏi về đăng ký thường trú, đăng ký tạm trú, lệ phí, các trường hợp đăng ký thường trú, thành phần hồ sơ, thời hạn giải quyết, biểu mẫu, xóa đăng ký thường trú, tách hộ, gia hạn tạm trú, xóa đăng ký tạm trú, Khai báo thông tin về cư trú, xác nhận thông tin về cư trú (ví dụ: Cho tôi biểu mẫu của đăng ký thường trú?)"):
+if prompt := st.chat_input("Hỏi về các thủ tục liên quan đến cư trú?"):
     # Thêm tin nhắn user
     st.session_state.messages.append({"role": "user", "content": prompt})
     with st.chat_message("user"):
